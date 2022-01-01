@@ -28,10 +28,6 @@ public class WolvSKMisc implements Listener {
 		   Skript.registerExpression(ExprRandomLicenceCode.class, String.class, ExpressionType.PROPERTY, "[a ]random license code");
 		   Skript.registerExpression(ExprRandomAlphaNumericString.class, String.class, ExpressionType.PROPERTY, "[a ]random alpha[ ]numeric[al] (text|string) of length %integer%");
 		   Skript.registerExpression(ExprListSort.class, Object.class, ExpressionType.PROPERTY, "%objects% (sorted|in order)");
-		   Skript.registerExpression(ExprReturnOfMethodWithParams.class, Object.class, ExpressionType.PROPERTY, "return of (function|method) %string% with param[meter][s] %objects% in class[ named] %string%");
-		   Skript.registerExpression(ExprReturnOfMethodWithoutParams.class, Object.class, ExpressionType.PROPERTY, "return of (function|method) %string% [without param[meter][s]] in class[ named] %string%");
-		   Skript.registerEffect(EffCallMethodWithParams.class, "call (function|method) %string% with param[meter][s] %objects% in class[ named] %string%");
-		   Skript.registerEffect(EffCallMethodWithoutParams.class, "call (function|method) %string% [without param[meter][s]] in class[ named] %string%");
 		   WolvSKAnvilGUI.registerAll();
 		   if(Bukkit.getServer().getPluginManager().getPlugin("ProtocolLib") != null) {
 			   WolvSKSteer.registerSteer();
